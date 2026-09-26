@@ -3,251 +3,216 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buddha Divers · Centro de buceo de referencia en Tarifa</title>
-  <meta name="description" content="Buddha Divers: el centro de buceo de referencia en Tarifa. Bautizos, cursos de buceo, inmersiones guiadas en la Isla de las Palomas y el Estrecho de Gibraltar.">
+  <title>La Gaceta del Estrecho · Buddha Divers</title>
+  <meta name="description" content="La Gaceta del Estrecho, el diario digital de Buddha Divers: noticias, reportajes y crónicas del centro de buceo de referencia en Tarifa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="nav" id="top">
-    <div class="container nav__inner">
-      <a href="#top" class="brand" aria-label="Buddha Divers, inicio">
-        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
-          <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
-          <path d="M5 19c3-2 5-2 8 0s5 2 8 0 5-2 6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="16" cy="11" r="3" fill="currentColor"/>
-        </svg>
-        <span>Buddha&nbsp;Divers</span>
-      </a>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="menu" class="nav__menu">
-        <a href="#por-que">Por qué nosotros</a>
-        <a href="#experiencias">Experiencias</a>
-        <a href="#inmersiones">Inmersiones</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contacto" class="btn btn--small">Reserva</a>
-      </nav>
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span id="fecha">Tarifa</span>
+      <span class="topbar__weather">🌊 Estado del mar: consulta con el centro antes de bucear</span>
+      <a href="#reserva" class="topbar__cta">Reserva tu inmersión</a>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__bubbles" aria-hidden="true"></div>
-      <div class="container hero__content">
-        <p class="eyebrow">Tarifa · Estrecho de Gibraltar</p>
-        <h1>Bucea donde se unen dos mares, con <em>el centro de referencia de Tarifa</em>.</h1>
-        <p class="lead">En Buddha Divers llevamos el buceo en el Estrecho a otro nivel: grupos reducidos, instructores que conocen cada roca y cada corriente, y una filosofía tranquila que convierte cada inmersión en una experiencia inolvidable.</p>
-        <div class="hero__cta">
-          <a href="#contacto" class="btn">Reserva tu inmersión</a>
-          <a href="#experiencias" class="btn btn--ghost">Descubre qué hacemos</a>
-        </div>
-        <ul class="hero__badges">
-          <li>Grupos reducidos</li>
-          <li>Instructores certificados</li>
-          <li>Todos los niveles</li>
+  <!-- CABECERA -->
+  <header class="masthead">
+    <div class="container">
+      <p class="masthead__kicker">Diario digital de <strong>Buddha Divers</strong> · Tarifa, Cádiz</p>
+      <h1 class="masthead__title"><a href="#top" id="top">La Gaceta del Estrecho</a></h1>
+      <p class="masthead__motto">«Todo lo que pasa bajo el agua, entre dos mares»</p>
+    </div>
+    <nav class="sections" aria-label="Secciones">
+      <div class="container sections__inner">
+        <button class="sections__toggle" aria-expanded="false" aria-controls="menu">☰ Secciones</button>
+        <ul id="menu">
+          <li><a href="#portada">Portada</a></li>
+          <li><a href="#reportaje">Reportaje</a></li>
+          <li><a href="#fondos">Fondos</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#opinion">Opinión</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#reserva">Reservas</a></li>
         </ul>
       </div>
-      <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z"/>
-      </svg>
-    </section>
+    </nav>
+  </header>
 
-    <!-- POR QUÉ -->
-    <section id="por-que" class="section">
-      <div class="container">
-        <p class="eyebrow">Por qué Buddha Divers</p>
-        <h2>La referencia del buceo en Tarifa</h2>
-        <p class="section__intro">Tarifa es uno de los puntos de buceo más especiales de Europa: el Atlántico y el Mediterráneo se encuentran aquí, creando una biodiversidad única. Para descubrirlo como se merece, necesitas a quien mejor lo conoce.</p>
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Última hora">
+    <span class="ticker__label">Última hora</span>
+    <div class="ticker__track">
+      <p>
+        Buddha Divers abre plazas para bautizos de buceo esta temporada &nbsp;•&nbsp;
+        La Isla de las Palomas, de nuevo el punto favorito de los buceadores &nbsp;•&nbsp;
+        Grupos reducidos: la apuesta del centro por un buceo sin masificación &nbsp;•&nbsp;
+        Nuevos cursos de Open Water y Advanced en marcha &nbsp;•&nbsp;
+      </p>
+    </div>
+  </div>
 
-        <div class="grid grid--4">
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🧭</div>
-            <h3>Conocimiento local</h3>
-            <p>Leemos las mareas, el viento de Levante y Poniente y las corrientes del Estrecho para elegir siempre el mejor punto y el mejor momento.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🛡️</div>
-            <h3>Seguridad ante todo</h3>
-            <p>Material revisado, briefings completos y ratios instructor‑alumno pensados para que bucees con total confianza.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🧘</div>
-            <h3>Filosofía Buddha</h3>
-            <p>Calma, respiración y disfrute. Sin prisas ni masificación: cada buceador recibe la atención que merece.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🌊</div>
-            <h3>Respeto al océano</h3>
-            <p>Buceo responsable y educación ambiental para proteger el Parque Natural del Estrecho que tanto amamos.</p>
-          </article>
+  <main class="container">
+
+    <!-- PORTADA -->
+    <section id="portada" class="front">
+      <article class="lead-story">
+        <p class="section-tag">Buceo · Tarifa</p>
+        <h2 class="headline headline--xl">Buddha Divers se consolida como el centro de buceo de referencia en Tarifa</h2>
+        <p class="standfirst">Con grupos reducidos, instructores que conocen cada roca del Estrecho y una filosofía basada en la calma, el centro tarifeño se ha convertido en la puerta de entrada al mundo submarino donde el Atlántico se encuentra con el Mediterráneo.</p>
+        <figure class="figure figure--hero">
+          <div class="art art--hero" role="img" aria-label="Ilustración: buceador sobre el fondo marino del Estrecho"></div>
+          <figcaption>Un buceador explora los fondos del Estrecho de Gibraltar. <span>Ilustración: La Gaceta del Estrecho</span></figcaption>
+        </figure>
+        <p class="byline">Por <strong>Redacción</strong> · Tarifa · <span class="read">4 min de lectura</span></p>
+        <div class="body columns">
+          <p class="dropcap">Hay lugares donde bucear es algo más que sumergirse. Tarifa, el punto más meridional de la Europa continental, es uno de ellos. Aquí, a solo catorce kilómetros de África, dos mares se mezclan y crean un ecosistema que sorprende incluso a los buceadores más experimentados. Y en este escenario privilegiado, Buddha Divers ha sabido construir algo diferente.</p>
+          <p>La clave, explican desde el centro, está en no tener prisa. «Aquí no venimos a acumular inmersiones, venimos a disfrutarlas», resume el equipo. Esa filosofía se traduce en grupos pequeños, briefings detallados y una atención personal que el buceador nota desde el primer minuto.</p>
+          <p>El otro gran valor es el conocimiento del terreno. En Tarifa, el viento manda: el Levante y el Poniente cambian por completo las condiciones de un día para otro. Saber leerlos y elegir en cada momento el punto de inmersión más resguardado marca la diferencia entre una inmersión cualquiera y una que se recuerda para siempre.</p>
+          <blockquote class="pullquote">«Aquí no venimos a acumular inmersiones, venimos a disfrutarlas»<cite>— Equipo de Buddha Divers</cite></blockquote>
+          <p>Desde el bautizo para quien nunca se ha puesto una botella hasta las inmersiones guiadas para buceadores titulados, pasando por cursos que acompañan al alumno paso a paso, el centro cubre todo el recorrido. Y siempre con un denominador común: la seguridad y el respeto por un mar que forma parte del Parque Natural del Estrecho.</p>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- CIFRAS -->
-    <section class="stats">
-      <div class="container grid grid--4">
-        <div class="stat"><span class="stat__num">2</span><span class="stat__label">mares en una sola inmersión</span></div>
-        <div class="stat"><span class="stat__num">14&nbsp;km</span><span class="stat__label">nos separan de África</span></div>
-        <div class="stat"><span class="stat__num">+10</span><span class="stat__label">puntos de buceo en la zona</span></div>
-        <div class="stat"><span class="stat__num">100%</span><span class="stat__label">pasión por el Estrecho</span></div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCIAS -->
-    <section id="experiencias" class="section">
-      <div class="container">
-        <p class="eyebrow">Experiencias</p>
-        <h2>Una inmersión para cada buceador</h2>
-        <div class="grid grid--3">
-          <article class="offer">
-            <span class="tag">Sin experiencia</span>
-            <h3>Bautizo de buceo</h3>
-            <p>Tu primera respiración bajo el agua, acompañado en todo momento por un instructor. Aguas protegidas y máxima tranquilidad.</p>
-            <ul class="checks">
-              <li>Briefing teórico</li>
-              <li>Todo el equipo incluido</li>
-              <li>Desde 10 años</li>
-            </ul>
-            <a href="#contacto" class="link">Quiero probar →</a>
-          </article>
-          <article class="offer offer--featured">
-            <span class="tag">El más popular</span>
-            <h3>Inmersiones guiadas</h3>
-            <p>Para buceadores titulados que quieren descubrir los mejores fondos de Tarifa con un guía que los conoce al detalle.</p>
-            <ul class="checks">
-              <li>Grupos reducidos</li>
-              <li>Selección diaria del mejor punto</li>
-              <li>Alquiler de equipo disponible</li>
-            </ul>
-            <a href="#contacto" class="link">Ver disponibilidad →</a>
-          </article>
-          <article class="offer">
-            <span class="tag">Aventura</span>
-            <h3>Snorkel en el Estrecho</h3>
-            <p>Explora la superficie de la Isla de las Palomas y sus pozas naturales. Ideal para familias y amigos.</p>
-            <ul class="checks">
-              <li>Aletas, máscara y traje</li>
-              <li>Guía acompañante</li>
-              <li>Para todas las edades</li>
-            </ul>
-            <a href="#contacto" class="link">Reservar snorkel →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- INMERSIONES -->
-    <section id="inmersiones" class="section section--deep">
-      <div class="container">
-        <p class="eyebrow eyebrow--light">Puntos de buceo</p>
-        <h2>Los fondos que nos hacen únicos</h2>
-        <p class="section__intro">La confluencia de aguas atlánticas y mediterráneas crea un ecosistema extraordinario, lleno de color y vida.</p>
-        <div class="spots">
-          <article class="spot">
-            <h3>Isla de las Palomas</h3>
-            <p>El punto más emblemático de Tarifa: paredes cubiertas de gorgonias, pulpos, morenas, meros y bancos de peces. Perfecto para todos los niveles.</p>
-            <span class="spot__meta">Todos los niveles</span>
-          </article>
-          <article class="spot">
-            <h3>Pecios del Estrecho</h3>
-            <p>Siglos de navegación han dejado restos históricos bajo el agua. Historia y vida marina en una misma inmersión.</p>
-            <span class="spot__meta">Nivel avanzado</span>
-          </article>
-          <article class="spot">
-            <h3>Arrecifes y bajos</h3>
-            <p>Formaciones rocosas llenas de nudibranquios, corales naranjas, sargos, doradas y, con suerte, algún pez luna.</p>
-            <span class="spot__meta">Nivel intermedio</span>
-          </article>
-        </div>
-
-        <div class="species">
-          <p>Vida que puedes encontrar:</p>
+      <aside class="side">
+        <article class="brief">
+          <p class="section-tag">Primer contacto</p>
+          <h3 class="headline">Tu primera respiración bajo el agua, en el mejor escenario posible</h3>
+          <p>El bautizo de buceo de Buddha Divers permite probar sin titulación, acompañado en todo momento por un instructor y con todo el equipo incluido.</p>
+          <a href="#reserva" class="more">Leer más →</a>
+        </article>
+        <article class="brief">
+          <p class="section-tag">Consejos</p>
+          <h3 class="headline">¿Mucho viento? Así eligen los expertos dónde bucear en Tarifa</h3>
+          <p>Levante o Poniente: cada viento abre y cierra puntos distintos. Conocerlos es la especialidad de la casa.</p>
+          <a href="#opinion" class="more">Leer más →</a>
+        </article>
+        <div class="box box--numbers">
+          <p class="section-tag">En cifras</p>
           <ul>
-            <li>Pulpos</li><li>Morenas</li><li>Meros</li><li>Nudibranquios</li>
-            <li>Gorgonias</li><li>Corales naranjas</li><li>Congrios</li><li>Rayas</li><li>Pez luna</li>
+            <li><strong>2</strong> mares en una sola inmersión</li>
+            <li><strong>14 km</strong> separan Tarifa de África</li>
+            <li><strong>+10</strong> puntos de buceo en la zona</li>
+            <li><strong>365</strong> días al año se puede bucear</li>
           </ul>
         </div>
-      </div>
+        <a href="#reserva" class="ad">
+          <span class="ad__label">Publicidad</span>
+          <strong>Bucea con calma,<br>bucea con Buddha</strong>
+          <span>Reserva tu plaza →</span>
+        </a>
+      </aside>
     </section>
 
-    <!-- CURSOS -->
-    <section id="cursos" class="section">
-      <div class="container">
-        <p class="eyebrow">Formación</p>
-        <h2>Aprende a bucear en el mejor aula del mundo</h2>
-        <p class="section__intro">Desde tu primer curso hasta niveles profesionales, formamos buceadores seguros, autónomos y enamorados del mar.</p>
-        <ol class="path">
-          <li>
-            <span class="path__step">01</span>
-            <div>
-              <h3>Open Water Diver</h3>
-              <p>Tu primera titulación para bucear de forma autónoma hasta 18 metros en cualquier parte del mundo.</p>
-            </div>
-          </li>
-          <li>
-            <span class="path__step">02</span>
-            <div>
-              <h3>Advanced Open Water</h3>
-              <p>Buceo profundo, navegación y especialidades para ganar confianza y ampliar tus límites hasta 30 metros.</p>
-            </div>
-          </li>
-          <li>
-            <span class="path__step">03</span>
-            <div>
-              <h3>Rescue Diver</h3>
-              <p>Aprende a prevenir y gestionar incidentes. El curso que transforma tu forma de bucear.</p>
-            </div>
-          </li>
-          <li>
-            <span class="path__step">04</span>
-            <div>
-              <h3>Especialidades y profesional</h3>
-              <p>Nitrox, buceo en pecios, fotografía submarina, Divemaster… Sigue creciendo con nosotros.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section section--soft">
-      <div class="container container--narrow">
-        <p class="eyebrow">Preguntas frecuentes</p>
-        <h2>Todo lo que necesitas saber</h2>
-        <details>
-          <summary>¿Necesito experiencia previa para bucear?</summary>
-          <p>No. Con el bautizo de buceo puedes probar sin ninguna titulación, siempre acompañado por un instructor.</p>
-        </details>
-        <details>
-          <summary>¿Qué pasa si hace mucho viento en Tarifa?</summary>
-          <p>Tarifa es famosa por su viento, pero precisamente por eso conocemos las zonas más resguardadas según sople Levante o Poniente. Si las condiciones no son seguras, reprogramamos tu inmersión.</p>
-        </details>
-        <details>
-          <summary>¿Cuál es la mejor época para bucear?</summary>
-          <p>Se bucea todo el año. De junio a octubre el agua está más templada y la visibilidad suele ser excelente.</p>
-        </details>
-        <details>
-          <summary>¿Tengo que traer mi propio equipo?</summary>
-          <p>No es necesario. Disponemos de equipo completo en alquiler, revisado y mantenido en perfecto estado.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section cta">
-      <div class="container cta__inner">
+    <!-- REPORTAJE -->
+    <section id="reportaje" class="band">
+      <header class="band__head"><h2>Reportaje</h2></header>
+      <article class="feature">
+        <div class="art art--feature" role="img" aria-label="Ilustración: grupo reducido de buceadores con su instructor"></div>
         <div>
-          <p class="eyebrow eyebrow--light">Reserva</p>
-          <h2>¿Listo para sumergirte en el Estrecho?</h2>
-          <p>Escríbenos y te ayudamos a elegir la experiencia perfecta según tu nivel y las condiciones del mar.</p>
+          <p class="section-tag">Experiencias</p>
+          <h3 class="headline headline--lg">Grupos reducidos: el secreto de un buceo que se disfruta</h3>
+          <p class="standfirst">Frente a las salidas masificadas, Buddha Divers apuesta por pocos buceadores por guía. El resultado: más seguridad, más vida marina y más tiempo para mirar.</p>
+          <p>Cuando el grupo es pequeño, todo cambia. El instructor puede adaptar el ritmo, detenerse ante un pulpo escondido o señalar un nudibranquio que pasaría desapercibido. Los fondos sufren menos y los buceadores, sobre todo los que empiezan, ganan confianza mucho más rápido.</p>
+          <p>El centro ofrece <strong>bautizos de buceo</strong>, <strong>inmersiones guiadas</strong> para titulados y <strong>snorkel</strong> en la Isla de las Palomas, una alternativa perfecta para familias.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- FONDOS -->
+    <section id="fondos" class="band">
+      <header class="band__head"><h2>Fondos</h2></header>
+      <div class="grid3">
+        <article class="card">
+          <div class="art art--a" role="img" aria-label="Ilustración: paredes con gorgonias"></div>
+          <p class="section-tag">Todos los niveles</p>
+          <h3 class="headline">Isla de las Palomas, el icono submarino de Tarifa</h3>
+          <p>Gorgonias, pulpos, morenas y meros en el punto más emblemático de la zona.</p>
+        </article>
+        <article class="card">
+          <div class="art art--b" role="img" aria-label="Ilustración: restos de un pecio"></div>
+          <p class="section-tag">Nivel avanzado</p>
+          <h3 class="headline">Pecios: siglos de historia bajo las aguas del Estrecho</h3>
+          <p>El paso de barcos durante siglos ha dejado un patrimonio sumergido fascinante.</p>
+        </article>
+        <article class="card">
+          <div class="art art--c" role="img" aria-label="Ilustración: arrecife con corales naranjas"></div>
+          <p class="section-tag">Nivel intermedio</p>
+          <h3 class="headline">Arrecifes y bajos, un estallido de color</h3>
+          <p>Corales naranjas, nudibranquios, sargos y, con suerte, la visita de un pez luna.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN + OPINIÓN -->
+    <div class="split">
+      <section id="formacion" class="band">
+        <header class="band__head"><h2>Formación</h2></header>
+        <p class="section-tag">Cursos</p>
+        <h3 class="headline headline--lg">Aprender a bucear en el mejor aula del mundo</h3>
+        <p>Buddha Divers acompaña al buceador en todo su recorrido formativo:</p>
+        <ol class="list">
+          <li><strong>Open Water Diver.</strong> La primera titulación para bucear de forma autónoma hasta 18 metros.</li>
+          <li><strong>Advanced Open Water.</strong> Profundidad, navegación y especialidades hasta 30 metros.</li>
+          <li><strong>Rescue Diver.</strong> Prevenir y gestionar incidentes: el curso que cambia tu forma de bucear.</li>
+          <li><strong>Especialidades y profesional.</strong> Nitrox, pecios, fotografía submarina, Divemaster…</li>
+        </ol>
+      </section>
+
+      <section id="opinion" class="band opinion">
+        <header class="band__head"><h2>Opinión</h2></header>
+        <article>
+          <p class="section-tag">Tribuna</p>
+          <h3 class="headline headline--lg">Bucear con calma</h3>
+          <p class="byline">Por <strong>el equipo de Buddha Divers</strong></p>
+          <p>Vivimos con prisa, también bajo el agua. Cuántas veces vemos buceadores que bajan, miran el ordenador, suben y tachan otra inmersión de la lista. Nosotros creemos en otra forma de hacerlo.</p>
+          <p>Respirar despacio, flotar sin esfuerzo, quedarse quieto frente a una grieta y dejar que la vida aparezca. Eso es lo que el Estrecho ofrece a quien sabe esperar. Y eso es lo que queremos enseñar: que el mar no se conquista, se comparte.</p>
+          <p>Por eso cuidamos cada detalle, elegimos cada punto según el viento y mantenemos grupos pequeños. No es la forma más rápida de trabajar, pero sí la que hace que la gente vuelva.</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- AGENDA + FAQ -->
+    <div class="split">
+      <section id="agenda" class="band">
+        <header class="band__head"><h2>Agenda</h2></header>
+        <ul class="agenda">
+          <li><span class="agenda__when">Todo el año</span> Inmersiones guiadas diarias, según condiciones del mar.</li>
+          <li><span class="agenda__when">Temporada alta</span> Bautizos y snorkel para familias en la Isla de las Palomas.</li>
+          <li><span class="agenda__when">Consultar fechas</span> Nuevos grupos de cursos Open Water y Advanced.</li>
+          <li><span class="agenda__when">Junio – octubre</span> Mejor época: agua más templada y gran visibilidad.</li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <header class="band__head"><h2>Preguntas de los lectores</h2></header>
+        <details>
+          <summary>¿Necesito experiencia previa?</summary>
+          <p>No. Con el bautizo puedes probar sin titulación, siempre acompañado por un instructor.</p>
+        </details>
+        <details>
+          <summary>¿Y si hace mucho viento?</summary>
+          <p>El centro elige las zonas más resguardadas según sople Levante o Poniente. Si no es seguro, se reprograma la inmersión.</p>
+        </details>
+        <details>
+          <summary>¿Tengo que traer equipo?</summary>
+          <p>No es necesario: hay equipo completo en alquiler, revisado y en perfecto estado.</p>
+        </details>
+      </section>
+    </div>
+
+    <!-- RESERVA -->
+    <section id="reserva" class="band reserva">
+      <header class="band__head"><h2>Reservas</h2></header>
+      <div class="reserva__inner">
+        <div>
+          <h3 class="headline headline--lg">¿Te animas a ser noticia bajo el agua?</h3>
+          <p>Escribe a Buddha Divers y el equipo te ayudará a elegir la experiencia perfecta según tu nivel y el estado del mar.</p>
           <ul class="contact">
             <li><strong>Dónde:</strong> Tarifa, Cádiz</li>
             <li><strong>Teléfono:</strong> <span class="placeholder">[añadir teléfono]</span></li>
@@ -255,12 +220,8 @@
           </ul>
         </div>
         <form class="form" id="reserva-form" novalidate>
-          <label>Nombre
-            <input type="text" name="nombre" required autocomplete="name">
-          </label>
-          <label>Email
-            <input type="email" name="email" required autocomplete="email">
-          </label>
+          <label>Nombre <input type="text" name="nombre" required autocomplete="name"></label>
+          <label>Email <input type="email" name="email" required autocomplete="email"></label>
           <label>¿Qué te interesa?
             <select name="interes">
               <option>Bautizo de buceo</option>
@@ -269,10 +230,8 @@
               <option>Snorkel</option>
             </select>
           </label>
-          <label>Fecha aproximada
-            <input type="date" name="fecha">
-          </label>
-          <button type="submit" class="btn">Enviar solicitud</button>
+          <label>Fecha aproximada <input type="date" name="fecha"></label>
+          <button type="submit">Enviar solicitud</button>
           <p class="form__msg" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -280,9 +239,10 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <p><strong>Buddha Divers</strong> · Centro de buceo en Tarifa</p>
-      <p>© <span id="year"></span> Buddha Divers. Bucea con calma, bucea con Buddha.</p>
+    <div class="container">
+      <p class="footer__title">La Gaceta del Estrecho</p>
+      <p>Publicación digital editada por <strong>Buddha Divers</strong>, centro de buceo en Tarifa. Contenido promocional del propio centro.</p>
+      <p>© <span id="year"></span> Buddha Divers · Bucea con calma, bucea con Buddha.</p>
     </div>
   </footer>
 
