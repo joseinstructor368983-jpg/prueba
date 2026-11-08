@@ -1,7 +1,6 @@
 // Fecha del día en la barra superior
 const hoy = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 document.getElementById('fecha').textContent = `Tarifa, ${hoy}`;
-document.getElementById('year').textContent = new Date().getFullYear();
 
 // Menú de secciones en móvil
 const toggle = document.querySelector('.sections__toggle');
