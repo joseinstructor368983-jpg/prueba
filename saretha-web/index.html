@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Saretha · Moda de mujer en San Fernando (Cádiz)</title>
+<meta name="description" content="Moda de mujer elegida pieza a pieza. Tienda en C/ Real 170, San Fernando (Cádiz). Pide por WhatsApp al 624 266 571 y recíbelo en 24/48 horas.">
+<link rel="canonical" href="https://saretha.es/">
+<meta name="theme-color" content="#1b1416">
+<link rel="icon" href="img/logo.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="img/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Saretha">
+<meta property="og:title" content="Saretha · Moda de mujer en San Fernando">
+<meta property="og:description" content="Prendas elegidas pieza a pieza. Pruébatelas en la calle Real o pídelas por WhatsApp.">
+<meta property="og:url" content="https://saretha.es/">
+<meta property="og:image" content="https://saretha.es/img/blusa-cuello-bordado.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Saretha","url":"https://saretha.es/","image":"https://saretha.es/img/logo.jpg","telephone":"+34624266571","address":{"@type":"PostalAddress","streetAddress":"Calle Real 170","addressLocality":"San Fernando","addressRegion":"Cádiz","addressCountry":"ES"},"sameAs":["https://www.instagram.com/saretha.moda/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Concepto: la tienda es un perchero. Una barra dorada cruza la portada y las prendas cuelgan y se mecen; el resto de la página es quieto, rosa pared y tinta. */
+:root{
+  --pared:#e9b3bf;      /* el rosa de su pared de fotos */
+  --polvo:#fbeef0;      /* fondo general */
+  --marfil:#fffaf7;
+  --tinta:#1b1416;      /* el negro de su logo */
+  --oro:#b98a56;        /* barra y perchas doradas */
+  --rosaoro:#c98c86;    /* las hojas del logo */
+  --burdeos:#7a2136;    /* botas, blusas, pintalabios */
+  --gris:#6d5c60;
+  --linea:rgba(27,20,22,.14);
+  --disp:"Bodoni Moda","Didot","Times New Roman",serif;
+  --text:"Jost","Century Gothic","Trebuchet MS",sans-serif;
+  --pad-l:max(20px,env(safe-area-inset-left,0px));--pad-r:max(20px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--polvo);color:var(--tinta);font:400 17px/1.6 var(--text);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--tinta)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--burdeos);outline-offset:3px}
+h1,h2,h3{font-family:var(--disp);font-weight:500;line-height:1.02;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,5.2vw,64px)}
+p{margin:0}
+.w{max-width:1240px;margin:0 auto;padding-left:var(--pad-l);padding-right:var(--pad-r)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;border:1.5px solid var(--tinta);background:var(--tinta);color:var(--marfil);text-decoration:none;font-weight:500;font-size:16px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--burdeos);border-color:var(--burdeos)}
+.btn.claro{background:transparent;color:var(--tinta)}
+.btn.claro:hover{background:var(--tinta);color:var(--marfil);border-color:var(--tinta)}
+.btn svg{width:19px;height:19px;flex:none}
+.aviso{background:var(--tinta);color:#f3d9d6;font-size:13.5px;text-align:center;padding:8px var(--pad-r) 8px var(--pad-l)}
+.aviso b{color:#fff;font-weight:500}
+
+/* cabecera */
+.cab{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,238,240,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--linea)}
+.cab .w{display:flex;align-items:center;gap:22px;height:72px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.marca img{width:46px;height:46px;border-radius:50%;object-fit:cover}
+.marca span{font:600 19px var(--text);letter-spacing:.34em}
+.cab nav{display:flex;gap:26px}
+.cab nav a{text-decoration:none;font-size:15.5px;position:relative;padding:6px 0}
+.cab nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--burdeos);transition:right .25s}
+.cab nav a:hover::after{right:0}
+.lista-btn{display:inline-flex;align-items:center;gap:8px;background:none;border:1.5px solid var(--linea);border-radius:999px;padding:9px 16px;font-size:15px}
+.lista-btn b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:50%;background:var(--burdeos);color:#fff;font-size:12px;font-weight:600}
+.lista-btn svg{width:17px;height:17px}
+.menu-btn{display:none;background:none;border:0;padding:8px}
+.menu-btn i{display:block;width:24px;height:2px;background:var(--tinta);margin:5px 0}
+
+/* portada */
+.portada{position:relative;background:var(--pared);overflow:hidden}
+.portada::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 600px at 78% 30%,rgba(255,255,255,.34),transparent 65%),radial-gradient(700px 500px at 0% 100%,rgba(122,33,54,.14),transparent 60%)}
+.portada .w{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:end;padding-top:56px}
+.portada h1{font-size:clamp(46px,7.6vw,112px);font-weight:500;line-height:.93}
+.portada h1 em{font-style:italic;font-weight:400}
+.portada .txt{padding-bottom:64px}
+.portada .txt p{font-size:19px;max-width:30em;margin-top:26px;color:#3a2a2e}
+.portada .acc{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.datos{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:34px;padding:0;list-style:none;font-size:15px}
+.datos li{display:flex;align-items:center;gap:8px}
+.datos li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--burdeos)}
+.arco{position:relative;justify-self:center;width:min(100%,430px)}
+.arco img{width:100%;aspect-ratio:700/945;object-fit:cover;border-radius:999px 999px 0 0;border:8px solid var(--marfil);border-bottom:0}
+.arco figcaption{position:absolute;left:-18px;bottom:54px;background:var(--marfil);border-radius:14px;padding:11px 16px;font-size:14px;line-height:1.3;box-shadow:0 18px 40px -18px rgba(27,20,22,.5);max-width:210px}
+.arco figcaption b{display:block;font-family:var(--disp);font-size:18px;font-weight:500}
+
+/* el perchero */
+.perchero{background:var(--marfil);padding-block:0 26px;position:relative}
+.perchero h2{font-size:clamp(28px,3.6vw,44px)}
+.perchero .tit{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;padding-top:44px}
+.perchero .tit p{color:var(--gris);font-size:15.5px}
+.barra-wrap{position:relative;margin-top:26px}
+.barra{position:absolute;left:0;right:0;top:15px;height:9px;background:linear-gradient(180deg,#e4c08f,#b98a56 55%,#8d6538);box-shadow:0 3px 6px rgba(27,20,22,.18);z-index:2}
+.rail{display:flex;gap:26px;overflow-x:auto;padding:0 var(--pad-r) 30px var(--pad-l);scroll-snap-type:x proximity;scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.rail.arr{cursor:grabbing;scroll-snap-type:none}
+.cuelga{flex:none;width:228px;scroll-snap-align:center;transform-origin:50% 18px;transform:rotate(var(--k,0deg));transition:transform .5s cubic-bezier(.2,.9,.3,1.3)}
+.cuelga .mece{transform-origin:50% 18px;animation:mece 5.5s ease-in-out infinite alternate}
+.cuelga:nth-child(2n) .mece{animation-duration:6.4s;animation-delay:-2s}
+.cuelga:nth-child(3n) .mece{animation-duration:4.8s;animation-delay:-3.4s}
+@keyframes mece{from{transform:rotate(-1.5deg)}to{transform:rotate(1.5deg)}}
+.cuelga svg{display:block;margin:0 auto;width:120px;height:66px;position:relative;z-index:3}
+.cuelga button{display:block;width:100%;padding:0;border:0;background:none;text-align:left;margin-top:-8px}
+.cuelga img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px;box-shadow:0 22px 34px -22px rgba(27,20,22,.55);pointer-events:none}
+.cuelga span{display:block;font-family:var(--disp);font-size:18px;line-height:1.15;margin-top:12px}
+.cuelga small{color:var(--gris);font-size:14px}
+
+/* secciones */
+.sec{padding-block:clamp(64px,9vw,120px)}
+.cabsec{display:grid;grid-template-columns:1fr auto;gap:20px 40px;align-items:end;margin-bottom:34px}
+.cabsec p{color:var(--gris);max-width:34em;margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1.5px solid var(--linea);background:transparent;border-radius:999px;padding:9px 18px;font-size:15px;transition:background .2s,color .2s}
+.chips button[aria-pressed="true"]{background:var(--tinta);color:var(--marfil);border-color:var(--tinta)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.prenda{position:relative;min-width:0}
+.prenda .foto{display:block;width:100%;padding:0;border:0;background:var(--pared);border-radius:6px;overflow:hidden}
+.prenda img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.prenda .foto:hover img{transform:scale(1.045)}
+.prenda h3{font-size:20px;margin-top:13px;line-height:1.15}
+.prenda p{font-size:14.5px;color:var(--gris);margin-top:3px}
+.cora{position:absolute;right:10px;top:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,250,247,.92);display:grid;place-items:center;transition:transform .2s}
+.cora:hover{transform:scale(1.1)}
+.cora svg{width:19px;height:19px;fill:none;stroke:var(--tinta);stroke-width:1.8}
+.cora[aria-pressed="true"] svg{fill:var(--burdeos);stroke:var(--burdeos)}
+.cora.pop{animation:pop .4s}
+@keyframes pop{40%{transform:scale(1.35)}}
+
+.looks{background:var(--tinta);color:var(--marfil)}
+.looks .cabsec p{color:#cdb9bc}
+.looks-g{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:22px;align-items:end}
+.look img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+.look:first-child img{aspect-ratio:4/5}
+.look{display:flex;flex-direction:column}.look div{min-height:128px}.look h3{font-size:24px;margin-top:16px}
+.look p{color:#cdb9bc;font-size:15px;margin-top:6px}
+.look a{display:inline-block;margin-top:12px;color:#f0c9c4;font-size:15px}
+
+.directo{background:var(--pared)}
+.directo .w{display:grid;grid-template-columns:auto 1fr auto;gap:34px;align-items:center}
+.sello{width:150px;height:150px;border-radius:50%;background:var(--tinta);display:grid;place-items:center;flex:none}
+.sello img{width:132px;height:132px;border-radius:50%;object-fit:cover}
+.directo h2{font-size:clamp(30px,4.2vw,52px)}
+.directo p{margin-top:12px;max-width:36em;color:#3a2a2e}
+
+.ella .w{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:center}
+.ella img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:999px 999px 6px 6px}
+.ella p{margin-top:20px;color:#3a2a2e;max-width:33em}
+.ella .lema{margin:28px 0 0;max-width:none;font:italic 400 clamp(24px,3vw,34px)/1.2 var(--disp);color:var(--burdeos)}
+
+.pasos{background:var(--marfil)}
+.pasos ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.pasos li{padding:30px 30px 34px 0;border-top:1.5px solid var(--tinta);counter-increment:p}
+.pasos li+li{padding-left:30px;border-left:1px solid var(--linea)}
+.pasos li::before{content:counter(p);font:italic 400 64px/1 var(--disp);color:var(--rosaoro)}
+.pasos h3{font-size:26px;margin-top:14px}
+.pasos p{color:var(--gris);margin-top:8px;font-size:16px}
+
+.regalo .w{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.regalo .t{grid-column:1/-1;margin-bottom:12px}
+.reg{position:relative;border-radius:6px;overflow:hidden;padding:0;border:0;background:var(--pared);text-align:left}
+.reg img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.reg span{position:absolute;left:12px;bottom:12px;background:var(--marfil);border-radius:999px;padding:8px 16px;font-size:15px}
+
+.faq{background:var(--marfil)}
+.faq .w{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px)}
+details{border-bottom:1px solid var(--linea)}
+summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-family:var(--disp);font-size:22px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:14px;font:400 30px var(--text);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 40px 22px 0;color:var(--gris)}
+
+.contacto .w{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px)}
+.contacto dl{margin:30px 0 0;display:grid;gap:20px}
+.contacto dt{font-size:14px;color:var(--gris)}
+.contacto dd{margin:2px 0 0;font-family:var(--disp);font-size:24px;line-height:1.2}
+.contacto dd a{text-decoration-thickness:1px;text-underline-offset:4px}
+.form{background:var(--marfil);border-radius:8px;padding:clamp(22px,3vw,36px);display:grid;gap:14px;align-content:start}
+.form h3{font-size:28px}
+.form label{font-size:14.5px;color:var(--gris);display:grid;gap:6px}
+.form input,.form textarea,.form select{font:inherit;color:var(--tinta);background:#fff;border:1.5px solid var(--linea);border-radius:10px;padding:13px 14px;width:100%}
+.form textarea{min-height:100px;resize:vertical}
+
+.pie{background:var(--tinta);color:#cdb9bc;font-size:15px;padding-block:44px}
+.pie .w{display:flex;flex-wrap:wrap;gap:20px 50px;align-items:center;justify-content:space-between}
+.pie .marca span{color:var(--marfil)}
+.pie a{text-decoration:none}.pie a:hover{color:#fff}
+.pie nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+
+/* ficha y lista */
+dialog{border:0;padding:0;background:var(--marfil);color:var(--tinta);border-radius:10px;max-width:min(940px,calc(100vw - 28px));width:100%;max-height:calc(100dvh - 28px)}
+dialog::backdrop{background:rgba(27,20,22,.62)}
+.ficha{display:grid;grid-template-columns:1fr 1fr}
+.ficha img{width:100%;height:100%;max-height:calc(100dvh - 28px);object-fit:cover;border-radius:10px 0 0 10px}
+.ficha .info{padding:clamp(22px,3.4vw,44px);display:flex;flex-direction:column;gap:14px;overflow:auto}
+.ficha .cat{font-size:14.5px;color:var(--burdeos)}
+.ficha h3{font-size:clamp(28px,3.4vw,40px)}
+.ficha .nota{font-size:15px;color:var(--gris);border-top:1px solid var(--linea);padding-top:14px}
+.ficha .acc{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
+.cerrar{position:absolute;right:12px;top:12px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,250,247,.95);font-size:24px;line-height:1;z-index:2}
+#lista{max-width:min(520px,calc(100vw - 28px))}
+#lista .in{padding:28px}
+#lista h3{font-size:32px}
+#lista ul{list-style:none;margin:20px 0;padding:0;display:grid;gap:12px}
+#lista li{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center}
+#lista li img{width:64px;height:84px;object-fit:cover;border-radius:5px}
+#lista li b{font-family:var(--disp);font-weight:500;font-size:18px;line-height:1.15}
+#lista li button{background:none;border:0;color:var(--gris);font-size:14px;text-decoration:underline}
+#lista .vacia{color:var(--gris);margin:18px 0}
+
+/* asistente */
+.flot{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;width:62px;height:62px;border-radius:50%;border:0;background:var(--tinta);color:var(--marfil);display:grid;place-items:center;box-shadow:0 16px 34px -12px rgba(27,20,22,.7)}
+.flot svg{width:28px;height:28px}
+.flot i{position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--pared);border:2px solid var(--tinta)}
+.chat{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:71;width:370px;max-width:calc(100vw - 28px);height:min(560px,calc(100dvh - 120px));background:var(--marfil);border-radius:16px;box-shadow:0 30px 70px -20px rgba(27,20,22,.6);display:flex;flex-direction:column;overflow:hidden}
+.chat header{background:var(--tinta);color:var(--marfil);padding:14px 16px;display:flex;align-items:center;gap:12px}
+.chat header img{width:40px;height:40px;border-radius:50%}
+.chat header b{display:block;font-weight:500}.chat header small{color:#cdb9bc;font-size:13px}
+.chat header button{margin-left:auto;background:none;border:0;color:#fff;font-size:26px;line-height:1}
+.msgs{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px;font-size:15.5px}
+.m{max-width:86%;padding:10px 14px;border-radius:16px;line-height:1.45;white-space:pre-line}
+.m.bot{background:#f6e3e6;border-bottom-left-radius:4px;align-self:flex-start}
+.m.yo{background:var(--tinta);color:var(--marfil);border-bottom-right-radius:4px;align-self:flex-end}
+.m a{color:var(--burdeos);font-weight:500}
+.rap{display:flex;flex-wrap:wrap;gap:6px}
+.rap button{border:1.5px solid var(--linea);background:#fff;border-radius:999px;padding:7px 13px;font-size:14px}
+.esc i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gris);margin-right:3px;animation:esc 1s infinite}
+.esc i:nth-child(2){animation-delay:.15s}.esc i:nth-child(3){animation-delay:.3s}
+@keyframes esc{50%{opacity:.25;transform:translateY(-3px)}}
+.chat form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--linea)}
+.chat input{flex:1;min-width:0;font:inherit;border:1.5px solid var(--linea);border-radius:999px;padding:11px 16px;background:#fff;color:var(--tinta)}
+.chat form button{border:0;background:var(--tinta);color:#fff;border-radius:50%;width:44px;height:44px;flex:none}
+
+@media (max-width:1000px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .cab nav{display:none;position:absolute;left:0;right:0;top:72px;background:var(--polvo);flex-direction:column;gap:0;border-bottom:1px solid var(--linea)}
+  .cab nav.ab{display:flex}
+  .cab nav a{padding:15px var(--pad-l);border-top:1px solid var(--linea)}
+  .cab nav a::after{display:none}
+  .menu-btn{display:block}
+  .looks-g{grid-template-columns:1fr 1fr}.look:first-child{grid-column:1/-1}.look:first-child img{aspect-ratio:16/11;object-position:50% 20%}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .cab .w{gap:10px;height:64px}.cab nav{top:64px}
+  .marca span{font-size:16px;letter-spacing:.26em}.marca img{width:40px;height:40px}
+  .lista-btn{padding:8px 12px}.lista-btn em{display:none}
+  .portada .w{grid-template-columns:1fr;gap:26px;padding-top:36px}
+  .portada .txt{padding-bottom:0}
+  .arco{width:min(86%,340px)}.arco figcaption{left:-8px;bottom:26px}
+  .cabsec{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr);gap:26px 14px}
+  .prenda h3{font-size:17px}
+  .cuelga{width:190px}
+  .directo .w,.ella .w,.faq .w,.contacto .w{grid-template-columns:1fr}
+  .sello{width:110px;height:110px}.sello img{width:96px;height:96px}
+  .pasos ol{grid-template-columns:1fr}.pasos li+li{padding-left:0;border-left:0}
+  .regalo .w{grid-template-columns:1fr 1fr}.regalo .reg:last-child{grid-column:1/-1}.regalo .reg:last-child img{aspect-ratio:16/11}
+  .ficha{grid-template-columns:1fr}.ficha img{border-radius:10px 10px 0 0;max-height:46dvh}
+  .looks-g{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+
+<header class="cab">
+  <div class="w">
+    <a class="marca" href="#inicio"><img src="img/logo.jpg" alt="Logo de Saretha" width="46" height="46"><span>SARETHA</span></a>
+    <nav id="nav">
+      <a href="#perchero">Novedades</a><a href="#tienda">Tienda</a><a href="#looks">Looks</a><a href="#comprar">Cómo comprar</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="lista-btn" id="abreLista" type="button" aria-label="Abrir mi lista"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.600-7 10-7 10Z"/></svg><em style="font-style:normal">Mi lista</em><b id="nLista">0</b></button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="portada">
+  <div class="w">
+    <div class="txt">
+      <h1>Prendas que vuelan <em>en una mañana</em></h1>
+      <p>Moda de mujer elegida pieza a pieza. Pruébatela en la tienda de la calle Real o pídela por WhatsApp y la tienes en casa en 24/48 horas.</p>
+      <div class="acc">
+        <a class="btn" href="#tienda">Ver la tienda</a>
+        <a class="btn claro" data-wa="Hola Saretha, vengo de la web y quiero hacer un pedido." href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-2 1.400-.5 0-1.100.2-3.600-.8-3-1.200-5-4.300-5.100-4.500-.2-.2-1.200-1.600-1.200-3s.800-2.200 1-2.500c.3-.3.600-.4.800-.4h.600c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .6l-.4.6-.4.5c-.2.2-.3.4-.1.7.2.300.8 1.400 1.800 2.200 1.200 1.100 2.300 1.400 2.600 1.600.3.100.5.100.7-.1l1-1.200c.2-.3.4-.2.7-.1l2 1c.3.100.5.200.6.300.1.200.1.800-.1 1.500Z"/></svg>Pedir por WhatsApp</a>
+      </div>
+      <ul class="datos"><li>Tienda en C/ Real 170, San Fernando</li><li>Envíos en 24/48 horas</li><li>Pedidos al 624 266 571</li></ul>
+    </div>
+    <figure class="arco">
+      <img src="img/blusa-cuello-bordado.jpg" alt="Blusa blanca con cuello grande bordado, con vaqueros" width="700" height="945">
+      <figcaption><b>Blusa de cuello bordado</b>La llevamos puesta en la foto.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="perchero" id="perchero">
+  <div class="w tit">
+    <h2>Recién colgado</h2>
+    <p>Arrastra el perchero y toca una prenda para verla de cerca.</p>
+  </div>
+  <div class="barra-wrap">
+    <div class="barra" aria-hidden="true"></div>
+    <div class="rail" id="rail"></div>
+  </div>
+</section>
+
+<section class="sec" id="tienda">
+  <div class="w">
+    <div class="cabsec">
+      <div><h2>La tienda</h2><p>Guarda con el corazón lo que te guste y mándanos tu lista por WhatsApp. Te decimos precio, tallas y si queda.</p></div>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo de prenda"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="sec looks" id="looks">
+  <div class="w">
+    <div class="cabsec"><div><h2>Así lo combinamos</h2><p>Así vestimos los maniquíes de la tienda. Si te gusta un conjunto entero, pídenoslo tal cual.</p></div></div>
+    <div class="looks-g">
+      <article class="look"><img src="img/maniquies.jpg" alt="Dos maniquíes: chaqueta blanca con pañuelo y bolso marrón, y blazer oscura con falda de lunares" loading="lazy"><div><h3>Dos formas de llevar el marrón</h3><p>Chaqueta blanca con pañuelo al cuello, o blazer con falda estampada y cinturón ancho.</p><a data-wa="Hola Saretha, me gusta el look de los dos maniquíes con bolsos marrones. ¿Me dais precio y tallas?" href="#">Pedir este look</a></div></article>
+      <article class="look"><img src="img/look-negro.jpg" alt="Maniquí con jersey negro cruzado, cinturón y falda larga estampada" loading="lazy"><div><h3>Jersey cruzado y falda larga</h3><p>Con cinturón de hebilla y bolso de mano.</p><a data-wa="Hola Saretha, me gusta el look del jersey negro cruzado con falda larga. ¿Me dais precio y tallas?" href="#">Pedir este look</a></div></article>
+      <article class="look"><img src="img/look-trench.jpg" alt="Percha con trench marrón, blusa vaquera, pañuelo de lunares y pantalón beige" loading="lazy"><div><h3>Trench, vaquero y lunares</h3><p>Trench marrón, blusa vaquera de volante y pañuelo de punto.</p><a data-wa="Hola Saretha, me gusta el look del trench marrón con la blusa vaquera. ¿Me dais precio y tallas?" href="#">Pedir este look</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec directo">
+  <div class="w">
+    <div class="sello"><img src="img/logo.jpg" alt="" width="132" height="132"></div>
+    <div><h2>Las novedades se enseñan en directo</h2><p>Cuando llega ropa nueva la sacamos en un directo de Instagram, prenda a prenda y puesta. Avisamos del día y la hora en el perfil.</p></div>
+    <a class="btn" href="https://www.instagram.com/saretha.moda/" target="_blank" rel="noopener">Seguir a @saretha.moda</a>
+  </div>
+</section>
+
+<section class="sec ella">
+  <div class="w">
+    <img src="img/ella-tienda.jpg" alt="La dueña de Saretha en la tienda, con una camisa blanca bordada" loading="lazy">
+    <div>
+      <h2>Detrás de cada percha hay alguien que la ha elegido</h2>
+      <p>Saretha no trabaja con catálogos cerrados. Cada prenda se escoge una a una, pensando en quién se la va a poner, y por eso de casi todo hay pocas unidades.</p>
+      <p>Lo que ves en las fotos es lo que hay en la tienda, puesto y sin trampa. Si dudas con una talla o un color, escríbenos y te lo enseñamos por WhatsApp.</p>
+      <p class="lema">Si te gusta, no lo dejes para mañana.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec pasos" id="comprar">
+  <div class="w">
+    <div class="cabsec"><div><h2>Cómo comprar</h2></div></div>
+    <ol>
+      <li><h3>Elige</h3><p>Guarda en tu lista lo que te guste, o haz una captura de la prenda.</p></li>
+      <li><h3>Escríbenos</h3><p>Mándanos la lista al WhatsApp 624 266 571. Te confirmamos precio, talla y que sigue disponible.</p></li>
+      <li><h3>Recíbelo o ven a por él</h3><p>Te lo enviamos en 24/48 horas, o lo recoges en la tienda de la calle Real.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec regalo">
+  <div class="w">
+    <div class="t"><h2>Para regalar</h2></div>
+    <button class="reg" type="button" data-p="paraguas"><img src="img/paraguas.jpg" alt="Paraguas automáticos estampados, cada uno en su cajita" loading="lazy"><span>Paraguas con cajita</span></button>
+    <button class="reg" type="button" data-p="neceseres"><img src="img/neceseres.jpg" alt="Neceseres acolchados con estampado animal" loading="lazy"><span>Neceseres</span></button>
+    <button class="reg" type="button" data-p="panuelo-lunares"><img src="img/panuelo-lunares.jpg" alt="Pañuelo de punto reversible de lunares en una percha" loading="lazy"><span>Pañuelos reversibles</span></button>
+  </div>
+</section>
+
+<section class="sec faq">
+  <div class="w">
+    <h2>Preguntas que nos hacéis</h2>
+    <div>
+      <details open><summary>¿Cuánto tarda el envío?</summary><p>Entre 24 y 48 horas desde que confirmamos tu pedido.</p></details>
+      <details><summary>¿Cómo sé el precio y la talla?</summary><p>Escríbenos por WhatsApp con la prenda que te gusta. Te decimos el precio, las tallas que quedan y cómo talla.</p></details>
+      <details><summary>¿Puedo ir a verlo a la tienda?</summary><p>Sí. Estamos en la calle Real 170, en San Fernando (Cádiz). Si vienes a por algo concreto, escríbenos antes para confirmar que sigue disponible.</p></details>
+      <details><summary>¿Por qué hay prendas que ya no están?</summary><p>Traemos pocas unidades de cada modelo. Cuando se acaban, salen de la web.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contacto" id="contacto">
+  <div class="w">
+    <div>
+      <h2>Ven o escríbenos</h2>
+      <dl>
+        <div><dt>WhatsApp para pedidos</dt><dd><a data-wa="Hola Saretha, vengo de la web." href="#">624 266 571</a></dd></div>
+        <div><dt>Tienda</dt><dd>C/ Real 170, San Fernando (Cádiz)</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/saretha.moda/" target="_blank" rel="noopener">@saretha.moda</a></dd></div>
+      </dl>
+      <p style="margin-top:28px"><a class="btn claro" href="https://www.google.com/maps/search/?api=1&query=Calle+Real+170+San+Fernando+C%C3%A1diz" target="_blank" rel="noopener">Cómo llegar</a></p>
+    </div>
+    <form class="form" id="form">
+      <h3>Pregunta por una prenda</h3>
+      <label for="f-nombre">Tu nombre<input id="f-nombre" autocomplete="given-name" required></label>
+      <label for="f-prenda">¿Qué te interesa?<select id="f-prenda"></select></label>
+      <label for="f-msg">Mensaje<textarea id="f-msg" placeholder="Talla, color, si es para regalo…"></textarea></label>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="w">
+    <a class="marca" href="#inicio"><img src="img/logo.jpg" alt="" width="46" height="46"><span>SARETHA</span></a>
+    <nav><a href="#tienda">Tienda</a><a href="#looks">Looks</a><a href="#comprar">Cómo comprar</a><a href="#contacto">Contacto</a><a href="https://www.instagram.com/saretha.moda/" target="_blank" rel="noopener">Instagram</a></nav>
+    <span>C/ Real 170, San Fernando (Cádiz)</span>
+  </div>
+</footer>
+
+<dialog id="ficha" aria-labelledby="fNombre"><button class="cerrar" type="button" data-cierra aria-label="Cerrar">×</button>
+  <div class="ficha"><img id="fImg" alt=""><div class="info"><span class="cat" id="fCat"></span><h3 id="fNombre"></h3><p id="fDesc"></p><p class="nota">Precio y tallas: te los decimos al momento por WhatsApp. Envío en 24/48 horas o recogida en tienda.</p><div class="acc"><a class="btn" id="fWa" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a><button class="btn claro" id="fLista" type="button">Guardar en mi lista</button></div></div></div>
+</dialog>
+
+<dialog id="lista" aria-labelledby="lTit"><button class="cerrar" type="button" data-cierra aria-label="Cerrar">×</button>
+  <div class="in"><h3 id="lTit">Mi lista</h3><p class="vacia" id="lVacia">Aún no has guardado nada. Toca el corazón de una prenda y aparecerá aquí.</p><ul id="lUl"></ul><a class="btn" id="lWa" href="#" target="_blank" rel="noopener">Enviar mi lista por WhatsApp</a></div>
+</dialog>
+
+<button class="flot" id="flot" type="button" aria-label="Abrir el asistente"><i></i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.600 7.100L4 20l1-4.600A8 8 0 1 1 21 12Z"/></svg></button>
+<div class="chat" id="chat" role="dialog" aria-label="Asistente de Saretha" hidden>
+  <header><img src="img/logo.jpg" alt=""><div><b>Saretha</b><small>Asistente de la tienda</small></div><button type="button" id="chatX" aria-label="Cerrar">×</button></header>
+  <div class="msgs" id="msgs"></div>
+  <form id="chatF"><input id="chatIn" autocomplete="off" placeholder="Escribe tu pregunta" aria-label="Tu pregunta"><button aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.500 21 12 3 3.500v6.600l12 1.900-12 1.900z"/></svg></button></form>
+</div>
+
+<script>
+const TEL='34624266571', WA=t=>'https://wa.me/'+TEL+'?text='+encodeURIComponent(t);
+const CATS=['Todo','Blusas','Punto','Abrigos y chaquetas','Calzado','Bolsos','Complementos'];
+const P=[
+ {id:'blusa-cuello-bordado',n:'Blusa de cuello bordado',c:'Blusas',d:'Blusa blanca de manga abullonada con un cuello grande bordado en tonos mostaza y marrón, y florecitas por todo el cuerpo.',alt:'Blusa blanca con cuello grande bordado'},
+ {id:'jersey-rayas',n:'Jersey de rayas con perritos',c:'Punto',d:'Jersey de punto a rayas con perritos bordados y los puños y el bajo en marrón.',alt:'Jersey de rayas con perritos bordados'},
+ {id:'chaqueta-leopardo',n:'Chaqueta de leopardo',c:'Abrigos y chaquetas',d:'Chaqueta corta con estampado de leopardo, cremallera y bolsillos de solapa. En la foto, con cuello vuelto negro y vaqueros.',alt:'Chaqueta corta de leopardo'},
+ {id:'blusa-rosas',n:'Blusa de rosas bordadas',c:'Blusas',d:'Blusa color crema con rosas bordadas en las mangas y ribete a juego en el escote y los puños.',alt:'Blusa crema con rosas bordadas en las mangas'},
+ {id:'bota-burdeos',n:'Bota arrugada burdeos',c:'Calzado',d:'Bota de caña arrugada en color burdeos, con punta fina y tacón bajo.',alt:'Bota burdeos de caña arrugada'},
+ {id:'jersey-blanco',n:'Jersey cruzado blanco roto',c:'Punto',d:'Jersey de punto calado en blanco roto, con el delantero cruzado.',alt:'Jersey cruzado de punto blanco roto'},
+ {id:'bolso-ante',n:'Bolso cuero con asa corta',c:'Bolsos',d:'Bolso de mano en tono cuero con grabado, asas cortas y tira de cierre en marrón oscuro.',alt:'Bolso de mano color cuero'},
+ {id:'chaqueta-pelo',n:'Chaqueta con cuello de pelo',c:'Abrigos y chaquetas',d:'Chaqueta en tono topo con cuello de pelo, corchetes dorados y dos bolsillos delanteros.',alt:'Chaqueta color topo con cuello de pelo'},
+ {id:'blusa-vichy',n:'Blusa vichy con mangas bordadas',c:'Blusas',d:'Blusa de cuadritos vichy con el cuerpo fruncido, volante en el bajo y flores bordadas en las mangas.',alt:'Blusa de cuadros vichy con flores bordadas en las mangas'},
+ {id:'botin-beige',n:'Botín beige trenzado',c:'Calzado',d:'Botín beige de punta fina y tacón bajo, con un cordón trenzado en el borde.',alt:'Botín beige con trenzado en el borde'},
+ {id:'jersey-teckel',n:'Jersey del teckel',c:'Punto',d:'Jersey color crema con un perro salchicha de leopardo en el pecho. En el maniquí, con camisa vaquera debajo.',alt:'Jersey crema con un perro salchicha en el pecho'},
+ {id:'bolso-tachas',n:'Bolso oliva con ojales',c:'Bolsos',d:'Bolso de hombro en verde oliva con ojales metálicos de varios tamaños.',alt:'Bolso verde oliva con ojales metálicos'},
+ {id:'blusa-azul',n:'Blusa azul de volantes',c:'Blusas',d:'Blusa azul claro con volantes en los hombros y puntilla en crudo.',alt:'Blusa azul claro con volantes y puntilla'},
+ {id:'parka-beige',n:'Parka beige con cuello marrón',c:'Abrigos y chaquetas',d:'Parka beige con cuello marrón, cintura ajustable con cordón y forro de cuadritos que asoma en los puños.',alt:'Parka beige con cuello marrón'},
+ {id:'bota-marron',n:'Botín marrón grabado',c:'Calzado',d:'Botín marrón chocolate con grabado, punta fina y tacón bajo.',alt:'Botín marrón chocolate'},
+ {id:'blusa-burdeos',n:'Blusa burdeos calada',c:'Blusas',d:'Blusa burdeos con bordados calados, botones forrados y volantito en el cuello.',alt:'Blusa burdeos con bordados calados'},
+ {id:'jersey-rayas-percha',n:'Jersey de rayas con pañuelo',c:'Punto',d:'El jersey de rayas y perritos, combinado con el pañuelo de punto de lunares.',alt:'Jersey de rayas con un pañuelo de lunares en la percha'},
+ {id:'panuelo-lunares',n:'Pañuelo de punto reversible',c:'Complementos',d:'Pañuelo de punto reversible. Se lleva al cuello o en la cintura.',alt:'Pañuelo de punto de lunares reversible'},
+ {id:'paraguas',n:'Paraguas automático con cajita',c:'Complementos',d:'Paraguas automático en varios estampados, cada uno con su cajita a juego. Pensado para regalar.',alt:'Paraguas automáticos estampados en sus cajas'},
+ {id:'neceseres',n:'Neceser de estampado animal',c:'Complementos',d:'Neceser o estuche acolchado, en varios estampados animales.',alt:'Neceseres acolchados de estampado animal'}
+];
+const by=id=>P.find(p=>p.id===id), $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=WA(a.dataset.wa);a.target='_blank';a.rel='noopener';});
+$('menuBtn').onclick=()=>$('nav').classList.toggle('ab');
+$('nav').onclick=()=>$('nav').classList.remove('ab');
+
+/* lista de deseos */
+let lista=[];try{lista=JSON.parse(localStorage.getItem('saretha-lista')||'[]').filter(by);}catch(e){}
+function guarda(){try{localStorage.setItem('saretha-lista',JSON.stringify(lista));}catch(e){}pinta();}
+function alterna(id){lista=lista.includes(id)?lista.filter(x=>x!==id):lista.concat(id);guarda();}
+const CORA='<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.600A4 4 0 0 1 19 10c0 5.600-7 10-7 10Z"/></svg>';
+function pinta(){
+  $('nLista').textContent=lista.length;
+  document.querySelectorAll('.cora').forEach(b=>{const on=lista.includes(b.dataset.id);b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',(on?'Quitar de':'Guardar en')+' mi lista: '+by(b.dataset.id).n);});
+  $('lVacia').hidden=lista.length>0;$('lWa').hidden=!lista.length;
+  $('lUl').innerHTML=lista.map(id=>{const p=by(id);return `<li><img src="img/${p.id}.jpg" alt=""><b>${esc(p.n)}</b><button type="button" data-q="${p.id}">Quitar</button></li>`;}).join('');
+  $('lWa').href=WA('Hola Saretha, me gustan estas prendas de la web:\n'+lista.map(id=>'- '+by(id).n).join('\n')+'\n¿Me decís precio y tallas?');
+  if(actual)$('fLista').textContent=lista.includes(actual)?'Quitar de mi lista':'Guardar en mi lista';
+}
+$('lUl').onclick=e=>{const b=e.target.closest('[data-q]');if(b)alterna(b.dataset.q);};
+$('abreLista').onclick=()=>$('lista').showModal();
+
+/* ficha */
+let actual=null;
+function abre(id){const p=by(id);if(!p)return;actual=id;$('fImg').src='img/'+p.id+'.jpg';$('fImg').alt=p.alt;$('fCat').textContent=p.c;$('fNombre').textContent=p.n;$('fDesc').textContent=p.d;
+  $('fWa').href=WA('Hola Saretha, me interesa: '+p.n+'. ¿Me decís precio y tallas?');pinta();$('ficha').showModal();}
+$('fLista').onclick=()=>alterna(actual);
+document.querySelectorAll('dialog').forEach(d=>{d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-cierra]'))d.close();});});
+document.querySelectorAll('.reg').forEach(b=>b.onclick=()=>abre(b.dataset.p));
+
+/* tienda */
+let cat='Todo';
+$('chips').innerHTML=CATS.map(c=>`<button type="button" aria-pressed="${c===cat}">${c}</button>`).join('');
+$('chips').onclick=e=>{const b=e.target.closest('button');if(!b)return;cat=b.textContent;[...$('chips').children].forEach(x=>x.setAttribute('aria-pressed',x===b));grid();};
+function grid(){
+  $('grid').innerHTML=P.filter(p=>cat==='Todo'||p.c===cat).map(p=>`<article class="prenda"><button class="foto" type="button" data-a="${p.id}" aria-label="Ver ${esc(p.n)}"><img src="img/${p.id}.jpg" alt="${esc(p.alt)}" loading="lazy" width="700" height="933"></button><button class="cora" type="button" data-id="${p.id}">${CORA}</button><h3>${esc(p.n)}</h3><p>${p.c}</p></article>`).join('');
+  pinta();
+}
+$('grid').onclick=e=>{const a=e.target.closest('[data-a]'),c=e.target.closest('.cora');if(c){alterna(c.dataset.id);const n=document.querySelector('.cora[data-id="'+c.dataset.id+'"]');n.classList.add('pop');}else if(a)abre(a.dataset.a);};
+
+/* el perchero: se arrastra, y las prendas se balancean según la velocidad */
+const rail=$('rail');
+const PERCHA='<svg viewBox="0 0 120 66" fill="none" stroke="#b98a56" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M60 30c0-6 7-6 7-12a7 7 0 1 0-14 0"/><path d="M60 30 8 58c-3 2-2 5 2 5h100c4 0 5-3 2-5L60 30Z"/></svg>';
+rail.innerHTML=['blusa-rosas','jersey-rayas','chaqueta-pelo','bota-burdeos','blusa-vichy','bolso-tachas','jersey-teckel','parka-beige','blusa-azul','botin-beige'].map(id=>{const p=by(id);return `<div class="cuelga"><div class="mece">${PERCHA}<button type="button" data-a="${p.id}" aria-label="Ver ${esc(p.n)}"><img src="img/${p.id}.jpg" alt="${esc(p.alt)}" width="700" height="933"><span>${esc(p.n)}</span><small>${p.c}</small></button></div></div>`;}).join('');
+const quieto=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let ult=rail.scrollLeft,t0=0,movido=0,ax=null;
+rail.addEventListener('scroll',()=>{const d=rail.scrollLeft-ult;ult=rail.scrollLeft;if(quieto)return;const k=Math.max(-9,Math.min(9,-d*.35));rail.querySelectorAll('.cuelga').forEach((c,i)=>c.style.setProperty('--k',(k*(.7+(i%3)*.2)).toFixed(2)+'deg'));clearTimeout(t0);t0=setTimeout(()=>rail.querySelectorAll('.cuelga').forEach(c=>c.style.setProperty('--k','0deg')),90);},{passive:true});
+rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;ax=e.clientX;movido=0;rail.classList.add('arr');});
+addEventListener('pointermove',e=>{if(ax===null)return;const d=e.clientX-ax;ax=e.clientX;movido+=Math.abs(d);rail.scrollLeft-=d;});
+addEventListener('pointerup',()=>{ax=null;rail.classList.remove('arr');});
+rail.addEventListener('click',e=>{const a=e.target.closest('[data-a]');if(a&&movido<8)abre(a.dataset.a);movido=0;});
+
+/* formulario */
+$('f-prenda').innerHTML='<option>Una duda general</option>'+P.map(p=>`<option>${esc(p.n)}</option>`).join('');
+$('form').addEventListener('submit',e=>{e.preventDefault();const n=$('f-nombre').value.trim(),p=$('f-prenda').value,m=$('f-msg').value.trim();
+  const a=document.createElement('a');a.href=WA('Hola Saretha, soy '+n+'. '+(p==='Una duda general'?'Tengo una duda.':'Me interesa: '+p+'.')+(m?'\n'+m:''));a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();});
+
+/* asistente */
+const msgs=$('msgs');let saludo=false;
+const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function pon(html,q){const d=document.createElement('div');d.className='m '+q;d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=1e6;return d;}
+function bot(html,rap){const t=pon('<span class="esc"><i></i><i></i><i></i></span>','bot');setTimeout(()=>{t.innerHTML=html;if(rap){const r=document.createElement('div');r.className='rap';r.innerHTML=rap.map(x=>`<button type="button">${x}</button>`).join('');r.onclick=e=>{if(e.target.tagName==='BUTTON')envia(e.target.textContent);};msgs.appendChild(r);}msgs.scrollTop=1e6;},650);}
+const wa=(t,l)=>`<a href="${WA(t)}" target="_blank" rel="noopener">${l}</a>`;
+const FIN='\n\n'+wa('Hola Saretha, vengo de la web y tengo una duda.','Escríbenos por WhatsApp')+' y te atendemos.';
+function responde(raw){const t=norm(raw),has=(...w)=>w.some(x=>t.includes(x));
+  const c=CATS.slice(1).find(x=>norm(x).split(' ').some(w=>w.length>4&&t.includes(w.slice(0,5))))||(has('jersey','jerse','chaqueta de punto','cardigan')?'Punto':has('abrigo','parka','chaqueta')?'Abrigos y chaquetas':has('bota','botin','zapato')?'Calzado':has('camisa')?'Blusas':has('panuelo','paraguas','neceser')?'Complementos':null);
+  if(/^(hola|buenas|hey)/.test(t)&&t.length<22)return bot('¡Hola! ¿Qué buscas hoy?',['Ver por tipo de prenda','Envíos','Precios y tallas','Dónde estáis']);
+  if(has('envio','envia','llega','tarda','plazo','correo'))return bot('Enviamos en 24/48 horas desde que confirmamos tu pedido.'+FIN);
+  if(has('precio','cuesta','cuanto','vale','talla','medida'))return bot('El precio y las tallas te los decimos al momento por WhatsApp, porque de cada prenda hay pocas unidades y cambian rápido.'+FIN,['Ver por tipo de prenda']);
+  if(has('donde','direccion','tienda fisica','calle','ubicacion','llegar','san fernando'))return bot('Estamos en la calle Real 170, en San Fernando (Cádiz).\n\n<a href="https://www.google.com/maps/search/?api=1&query=Calle+Real+170+San+Fernando+C%C3%A1diz" target="_blank" rel="noopener">Abrir en Google Maps</a>'+FIN);
+  if(has('horario','abris','abre','cierra','hora'))return bot('El horario de la tienda te lo confirmamos por WhatsApp.'+FIN);
+  if(has('comprar','pedido','pedir','pagar','pago','como compro'))return bot('Es fácil:\n1. Guarda en tu lista lo que te guste.\n2. Mándanosla por WhatsApp.\n3. Te lo enviamos en 24/48 horas o lo recoges en tienda.'+FIN);
+  if(has('regal'))return bot('Para regalar tenemos paraguas con su cajita, neceseres y pañuelos de punto reversibles. Los tienes en «Para regalar».'+FIN);
+  if(has('directo','instagram','novedad'))return bot('Las novedades las enseñamos en directo en Instagram, en <a href="https://www.instagram.com/saretha.moda/" target="_blank" rel="noopener">@saretha.moda</a>. Avisamos allí del día y la hora.'+FIN);
+  if(has('tipo','catalogo','ropa','prenda','que teneis','ver'))return bot('¿Qué te apetece ver?',CATS.slice(1));
+  if(c){const l=P.filter(p=>p.c===c);cat=c;[...$('chips').children].forEach(x=>x.setAttribute('aria-pressed',x.textContent===c));grid();return bot('En '+c.toLowerCase()+' tenemos ahora:\n'+l.map(p=>'· '+p.n).join('\n')+'\n\nTe las he dejado filtradas en <a href="#tienda">la tienda</a>.'+FIN);}
+  bot('Eso mejor te lo contesta una persona.'+FIN,['Ver por tipo de prenda','Envíos','Precios y tallas']);
+}
+function envia(x){x=x.trim();if(!x)return;pon(esc(x),'yo');responde(x);}
+function chat(ab){$('chat').hidden=!ab;$('flot').querySelector('i').hidden=true;if(ab&&!saludo){saludo=true;bot('¡Hola! Soy el asistente de Saretha. Te ayudo a encontrar una prenda o a hacer tu pedido.',['Ver por tipo de prenda','Envíos','Precios y tallas','Dónde estáis']);}if(ab)setTimeout(()=>$('chatIn').focus(),100);}
+$('flot').onclick=()=>chat($('chat').hidden);$('chatX').onclick=()=>chat(false);
+$('chatF').addEventListener('submit',e=>{e.preventDefault();envia($('chatIn').value);$('chatIn').value='';});
+
+grid();
+</script>
+
+</body></html>
